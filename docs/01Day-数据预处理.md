@@ -1,8 +1,6 @@
 # 01Day-数据预处理
 
-:::warning
-对于初学者的我一天不够哈哈，多花点时间学习下
-:::
+
 
 本次所用到的数据集点击此处下载[Data.csv](/src/files/ML/Data.csv)
 
