@@ -3,6 +3,7 @@
 
 **线性回归（Linear Regression）是一种常见的统计学和机器学习方法，用于建立自变量（特征）和因变量之间的线性关系模型。**
 
+本次所用到的数据集点击此处下载[studentscores.csv](/data/studentscores.csv)
 ## 线性回归介绍
 ### 简单线性回归
 

@@ -2,7 +2,7 @@
 
 
 
-本次所用到的数据集点击此处下载[Data.csv](/src/files/ML/Data.csv)
+本次所用到的数据集点击此处下载[Data.csv](/data/Data.csv)
 
 ## 1.导入相关库
 当进行数据预处理时，NumPy和Pandas是两个非常有用的Python库。下面是对它们的简要介绍：
