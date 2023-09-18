@@ -26,26 +26,22 @@ X_encoded = onehot_encoder.fit_transform(X[:, 3].reshape(-1, 1)).toarray()
 # 将独热编码后的特征拼接到原特征矩阵中
 X = np.concatenate((X[:, :3], X_encoded, X[:, 4:]), axis=1)
 
-# 3.将标签转变为Label 编码
-label_encoder_Y = LabelEncoder()
-Y = label_encoder_Y.fit_transform(Y)
-
-# 4.划分训练集及测试集
+# 3.划分训练集及测试集
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=0)
 
-# 5. 训练集使用简单线性回归模型来训练
+# 4. 训练集使用简单线性回归模型来训练
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor = regressor.fit(X_train, Y_train)
 y_pred = regressor.predict(X_test)
 
-# 6.可视化
-# 6.1 训练集结果可视化
+# 5.可视化
+# 5.1 训练集结果可视化
 plt.scatter(X_train[:, 0], Y_train, edgecolors='red')  # 选择第一个特征 X1
 plt.plot(X_train[:, 0], regressor.predict(X_train), color='blue')  # 绘制回归线
 plt.title("Train DataSet")
 plt.show()
-# 6.2 测试集可视化
+# 5.2 测试集可视化
 plt.scatter(X_test[:, 0], Y_test, edgecolors='red')  # 选择第一个特征 X1
 plt.plot(X_test[:, 0], regressor.predict(X_test), color='blue')  # 绘制回归线
 plt.title("Test DataSet")
