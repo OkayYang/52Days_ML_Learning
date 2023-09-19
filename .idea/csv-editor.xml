@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\Social_Network_Ads.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\studentscores.csv">
           <value>
             <Attribute>
